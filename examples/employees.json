@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Иванова Анна Сергеевна",
+    "oklad": 120000,
+    "rate": 1,
+    "vacations": [],
+    "premium_type": "percent_worked",
+    "premium_value": 20
+  },
+  {
+    "id": "2",
+    "name": "Петров Дмитрий Игоревич",
+    "oklad": 95000,
+    "rate": 1,
+    "vacations": [
+      {"start": "2026-08-10", "end": "2026-08-23"}
+    ],
+    "premium_type": "fixed",
+    "premium_value": 5000,
+    "avg_daily_earning": 3800
+  },
+  {
+    "id": "3",
+    "name": "Сидорова Ольга Викторовна",
+    "oklad": 80000,
+    "rate": 0.5,
+    "vacations": [],
+    "premium_type": "percent_oklad",
+    "premium_value": 10
+  },
+  {
+    "id": "4",
+    "name": "Кузнецов Артём Павлович",
+    "oklad": 150000,
+    "rate": 1,
+    "vacations": [
+      {"start": "2026-08-01", "end": "2026-08-31"}
+    ],
+    "premium_type": "fixed",
+    "premium_value": 0,
+    "avg_daily_earning": 5200
+  }
+]
