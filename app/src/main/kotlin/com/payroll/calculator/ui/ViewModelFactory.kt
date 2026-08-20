@@ -1,6 +1,7 @@
 package com.payroll.calculator.ui
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisallowComposableCalls
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.ViewModel
@@ -12,7 +13,7 @@ import com.payroll.calculator.data.EmployeeRepository
 /** Создаёт ViewModel, передавая ей [EmployeeRepository] из [PayrollApp]. */
 @Composable
 inline fun <reified VM : ViewModel> payrollViewModel(
-    crossinline create: (EmployeeRepository) -> VM,
+    crossinline create: @DisallowComposableCalls (EmployeeRepository) -> VM,
 ): VM {
     val repository = (LocalContext.current.applicationContext as PayrollApp).repository
     val factory = remember(repository) {
