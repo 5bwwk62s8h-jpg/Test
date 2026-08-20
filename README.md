@@ -167,11 +167,16 @@ Gradle-зависимостей (Android Gradle Plugin, Compose, Room). Либо
 
 > В этой песочнице нет Android SDK, а домен `dl.google.com` (Google Maven,
 > откуда качаются AGP/Compose/Room) недоступен через прокси — поэтому
-> собрать и прогнать модуль `:app` здесь не получилось. Модуль `domain/`
-> — чистый Kotlin/JVM без Android-зависимостей — собран и протестирован
-> прямо здесь (`./gradlew :domain:test`, 13/13 тестов зелёные), это
-> подтверждает корректность портированной логики расчёта. UI-слой (`:app`)
-> нужно собрать и проверить в Android Studio или на CI с Android SDK.
+> собрать и прогнать модуль `:app` здесь не получилось. Плагины
+> Android/KSP объявлены только в `app/build.gradle.kts` (а не в корневом
+> `build.gradle.kts` через `apply false`), а `org.gradle.configureondemand=true`
+> в `gradle.properties` не даёт Gradle конфигурировать `:app` при сборке
+> других модулей — поэтому `:domain/` — чистый Kotlin/JVM без
+> Android-зависимостей — собирается и тестируется прямо здесь, не трогая
+> Google Maven вообще (`./gradlew :domain:test`, 13/13 тестов зелёные), и
+> это подтверждает корректность портированной логики расчёта. UI-слой
+> (`:app`) нужно собрать и проверить в Android Studio или на CI с Android
+> SDK.
 
 ### Тесты доменной логики
 
