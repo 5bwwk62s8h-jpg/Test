@@ -3,3 +3,14 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 .venv/
+
+# Android / Gradle
+.gradle/
+build/
+*/build/
+*/*/build/
+.idea/
+*.iml
+local.properties
+captures/
+.cxx/

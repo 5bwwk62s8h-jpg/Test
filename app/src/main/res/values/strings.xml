@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">ФОТ Калькулятор</string>
+
+    <string name="nav_employees">Сотрудники</string>
+    <string name="nav_report">Отчёт</string>
+
+    <string name="employees_title">Сотрудники</string>
+    <string name="employees_empty_title">Пока нет сотрудников</string>
+    <string name="employees_empty_body">Добавьте первого сотрудника, чтобы начать расчёт ФОТ</string>
+    <string name="employees_add">Добавить сотрудника</string>
+    <string name="employees_delete_confirm_title">Удалить сотрудника?</string>
+    <string name="employees_delete_confirm_body">Это действие нельзя отменить.</string>
+
+    <string name="employee_edit_title_new">Новый сотрудник</string>
+    <string name="employee_edit_title_edit">Редактирование</string>
+    <string name="employee_field_name">ФИО</string>
+    <string name="employee_field_oklad">Оклад, ₽</string>
+    <string name="employee_field_rate">Ставка</string>
+    <string name="employee_field_avg_daily">Средний дневной заработок, ₽ (необязательно)</string>
+    <string name="employee_field_premium_type">Тип премии</string>
+    <string name="employee_field_premium_value">Значение премии</string>
+    <string name="employee_premium_fixed">Фиксированная сумма</string>
+    <string name="employee_premium_percent_oklad">% от оклада</string>
+    <string name="employee_premium_percent_worked">% от отработанного</string>
+    <string name="employee_vacations_title">Периоды отпуска</string>
+    <string name="employee_vacations_add">Добавить период</string>
+    <string name="employee_save">Сохранить</string>
+    <string name="employee_delete">Удалить</string>
+    <string name="employee_validation_name_required">Укажите ФИО</string>
+    <string name="employee_validation_oklad_required">Укажите оклад</string>
+
+    <string name="report_title">Отчёт по ФОТ</string>
+    <string name="report_month_picker">Месяц</string>
+    <string name="report_insurance_rate">Страховые взносы, \%</string>
+    <string name="report_empty">Добавьте сотрудников на вкладке «Сотрудники», чтобы увидеть расчёт</string>
+    <string name="report_norm">Норма</string>
+    <string name="report_worked">Отработано</string>
+    <string name="report_vacation_days">Дней отпуска</string>
+    <string name="report_base_salary">Оклад</string>
+    <string name="report_vacation_pay">Отпускные</string>
+    <string name="report_premium">Премия</string>
+    <string name="report_insurance">Взносы</string>
+    <string name="report_total">Итого</string>
+    <string name="report_summary_base">Оклады за отработанное время</string>
+    <string name="report_summary_vacation">Отпускные</string>
+    <string name="report_summary_premium">Премии</string>
+    <string name="report_summary_insurance">Страховые взносы</string>
+    <string name="report_summary_total">Итого ФОТ</string>
+    <string name="report_export_csv">Экспорт в CSV</string>
+    <string name="report_hours_format">%1$s ч</string>
+
+    <string name="common_cancel">Отмена</string>
+    <string name="common_delete">Удалить</string>
+    <string name="common_from">С</string>
+    <string name="common_to">По</string>
+</resources>
