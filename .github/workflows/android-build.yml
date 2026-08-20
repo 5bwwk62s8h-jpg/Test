@@ -23,11 +23,8 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Run domain tests
-        run: ./gradlew :domain:test
-
-      - name: Build debug APK
-        run: ./gradlew :app:assembleDebug
+      - name: Run domain tests and build debug APK
+        run: ./gradlew :domain:test :app:assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
